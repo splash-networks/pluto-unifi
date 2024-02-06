@@ -57,14 +57,6 @@ if (isset($_POST['connect'])) {
         <section class="section">
             <div class="container">
                 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                    <div class="field">
-                        <div class="control has-icons-left">
-                            <input class="input" type="password" name="pass" placeholder="Password">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-key"></i>
-                            </span>
-                        </div>
-                    </div>
                     <br>
                     <div class="buttons is-centered">
                         <input class="button" type="submit" name="connect" value="Connect">
