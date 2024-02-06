@@ -2,8 +2,10 @@
 
 require 'header.php';
 
-$_SESSION["id"] = $_GET['id'];
-$_SESSION["ap"] = $_GET['ap'];
+if (isset($_GET['id'])) {
+  $_SESSION["id"] = $_GET['id'];
+  $_SESSION["ap"] = $_GET['ap'];
+}
 
 if (isset($_POST['connect'])) {
     $mac = $_SESSION["id"];
@@ -24,7 +26,7 @@ if (isset($_POST['connect'])) {
 
     $auth_result = $unifi_connection->authorize_guest($mac, $duration, null, null, null, $apmac);
 
-    header("Location: $url");
+  header("Location: $url");
 }
 
 ?>
