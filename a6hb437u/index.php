@@ -15,7 +15,7 @@ if (isset($_POST['connect'])) {
   $controllerurl = $_SERVER['CONTROLLER_URL'];
   $controllerversion = $_SERVER['CONTROLLER_VERSION'];
   $duration = $_SERVER['DURATION'];
-  $debug = true;
+  $debug = false;
   $site_id = $_SERVER['SITE_ID'];
 
   $unifi_connection = new UniFi_API\Client($controlleruser, $controllerpassword, $controllerurl, $site_id, $controllerversion);
