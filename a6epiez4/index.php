@@ -26,7 +26,7 @@ if (isset($_POST['connect'])) {
 
     $auth_result = $unifi_connection->authorize_guest($mac, $duration, null, null, null, $apmac);
 
-    header("Location: $url");
+    header("Location: connect.php");
 }
 
 ?>
