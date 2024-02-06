@@ -2,8 +2,10 @@
 
 require 'header.php';
 
-$_SESSION["id"] = $_GET['id'];
-$_SESSION["ap"] = $_GET['ap'];
+if (isset($_GET['id'])) {
+  $_SESSION["id"] = $_GET['id'];
+  $_SESSION["ap"] = $_GET['ap'];
+}
 
 if (isset($_POST['connect'])) {
   $mac = $_SESSION["id"];
