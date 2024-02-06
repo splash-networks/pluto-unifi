@@ -24,6 +24,7 @@ if (isset($_POST['connect'])) {
 
   $auth_result = $unifi_connection->authorize_guest($mac, $duration, null, null, null, $apmac);
 
+  echo json_encode($auth_result, JSON_PRETTY_PRINT);
 //  header("Location: $url");
 }
 
