@@ -45,24 +45,22 @@ if (isset($_POST['connect'])) {
 
 <body>
     <div class="container">
-        <main>
-            <div class="is-flex-direction-column is-justify-content-space-evenly full-height">
-                <section>
-                    <figure class="image is-256x256">
-                        <img src="../assets/images/logo.png">
-                    </figure>
-                </section>
-                <section>
-                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                        <p class="has-text-centered">Enjoy free WiFi</p>
-                        <br>
-                        <div class="buttons is-centered">
-                            <input class="button is-dark is-responsive is-fullwidth" type="submit" name="connect" value="Login">
-                        </div>
-                    </form>
-                </section>
-            </div>
-        </main>
+        <div class="login-container">
+            <section>
+                <figure class="image is-256x256 pluto-logo">
+                    <img src="../assets/images/logo.png">
+                </figure>
+            </section>
+            <section>
+                <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                    <p class="has-text-centered">Enjoy free WiFi</p>
+                    <br>
+                    <div class="login-btn">
+                        <input class="button is-dark is-responsive" type="submit" name="connect" value="Login">
+                    </div>
+                </form>
+            </section>
+        </div>
     </div>
 </body>
 

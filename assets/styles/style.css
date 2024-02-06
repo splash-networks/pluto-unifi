@@ -6,12 +6,16 @@ body {
   background-color: #000000;
 }
 
-.full-height {
+.login-container {
   height: 100vh;
   background-color: #000000;
   color: #ffffff;
   max-width: 510px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .page {
@@ -78,4 +82,23 @@ body {
   #login {
     margin-top: 20px;
   }
+}
+
+.pluto-logo{
+  width: 175px;
+  height: 175px;
+  margin: 0 auto;
+}
+.pluto-logo img{
+  width: 100%;
+  height: 100%;
+  object-position:center;
+  object-fit: contain;
+}
+
+.login-btn{
+  text-align: center;
+}
+.login-btn .button{
+  width: 300px;
 }
