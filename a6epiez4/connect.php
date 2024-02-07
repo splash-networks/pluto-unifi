@@ -20,16 +20,19 @@ $url = $_SERVER['REDIRECT_URL'];
 </head>
 
 <body>
-<div class="container h-100">
-    <div class="login-container">
-        <section>
-            <figure class="image is-256x256 pluto-logo">
-                <img src="../assets/images/logo.png">
-            </figure>
-        </section>
-        <section>
-            <p class="has-text-centered">Please wait, you are being connected</p>
-        </section>
+    <div class="container h-100">
+        <div class="login-container">
+            <section>
+                <figure class="pluto-logo">
+                    <img src="../assets/images/logo.png">
+                </figure>
+            </section>
+            <section>
+                <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                    <p class="has-text-centered">Please wait, you are being connected</p>
+                </form>
+            </section>
+        </div>
     </div>
 </div>
 </body>

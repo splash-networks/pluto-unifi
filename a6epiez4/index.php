@@ -47,7 +47,7 @@ if (isset($_POST['connect'])) {
     <div class="container h-100">
         <div class="login-container">
             <section>
-                <figure class="image is-256x256 pluto-logo">
+                <figure class=" pluto-logo">
                     <img src="../assets/images/logo.png">
                 </figure>
             </section>
