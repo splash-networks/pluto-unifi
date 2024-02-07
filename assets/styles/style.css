@@ -1,13 +1,16 @@
-/*
-    *{ border: 1px solid red; }
-*/
+html, body{
+  overflow: hidden;
+  height: 100%;
+}
 
 body {
   background-color: #000000;
 }
-
+.h-100{
+  height: 100%;
+}
 .login-container {
-  height: 100vh;
+  height: 100%;
   background-color: #000000;
   color: #ffffff;
   max-width: 510px;
@@ -16,6 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .page {
@@ -85,8 +89,8 @@ body {
 }
 
 .pluto-logo{
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
 }
 .pluto-logo img{
@@ -94,6 +98,7 @@ body {
   height: 100%;
   object-position:center;
   object-fit: contain;
+  margin-left: 18px;
 }
 
 .login-btn{
