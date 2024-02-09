@@ -51,7 +51,7 @@ if (isset($_POST['connect'])) {
                     <img src="../assets/images/logo.png">
                 </figure>
             </section>
-            <section>
+            <section class="form-section">
                 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                     <p class="has-text-centered">Enjoy free WiFi</p>
                     <br>

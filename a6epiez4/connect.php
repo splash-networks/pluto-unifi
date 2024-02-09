@@ -27,7 +27,7 @@ $url = $_SERVER['REDIRECT_URL'];
                     <img src="../assets/images/logo.png">
                 </figure>
             </section>
-            <section>
+            <section class="form-section">
                 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                     <p class="has-text-centered">Please wait, you are being connected</p>
                 </form>

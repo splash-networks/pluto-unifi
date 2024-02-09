@@ -107,3 +107,7 @@ body {
 .login-btn .button{
   width: 300px;
 }
+
+.form-section{
+  height: 90px;
+}
